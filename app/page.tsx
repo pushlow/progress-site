@@ -211,7 +211,7 @@ export default function Page() {
 
       <motion.h1
         variants={fadeUp}
-        className="max-w-4xl font-sans text-[56px] font-semibold leading-[0.92] tracking-[-0.05em] text-slate-950 xl:text-[72px]"
+        className="max-w-4xl font-sans text-[34px] font-semibold leading-[0.92] tracking-[-0.05em] text-slate-950 xl:text-[72px]"
       >
         Системы
         <span className="block text-[#0D1748]">водоподготовки</span>
