@@ -143,9 +143,9 @@ export default function Page() {
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
         className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl"
       >
-        <div className="brand-container mx-auto flex items-center justify-between px-6 py-4 lg:px-10">
-          <div className="flex items-center gap-4">
-  <div className="relative h-12 w-12">
+        <div className="brand-container mx-auto flex items-center justify-between max-sm:gap-3 max-sm:px-4 max-sm:py-3 px-6 py-4 lg:px-10">
+          <div className="flex min-w-0 items-center gap-4 max-sm:gap-2">
+  <div className="relative h-12 w-12 shrink-0 max-sm:h-10 max-sm:w-10">
     <Image
       src="/logo-mark2.png"
       alt="ПРОГРЕСС"
@@ -155,11 +155,11 @@ export default function Page() {
     />
   </div>
 
-  <div>
-    <div className="font-sans text-lg font-semibold tracking-[0.08em] text-[#0D1748]">
+  <div className="min-w-0">
+    <div className="truncate font-sans text-lg font-semibold tracking-[0.08em] text-[#0D1748] max-sm:text-sm">
       ПРОГРЕСС
     </div>
-    <div className="text-xs uppercase tracking-[0.18em] text-slate-500">
+    <div className="truncate text-xs uppercase tracking-[0.18em] text-slate-500">
       Полный цикл водоподготовки
     </div>
   </div>
@@ -179,7 +179,7 @@ export default function Page() {
 
           <a
             href="#contact"
-            className="rounded-full bg-[#0D1748] px-5 py-3 text-sm font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(13,23,72,0.22)]"
+            className="shrink-0 rounded-full bg-[#0D1748] px-5 py-3 text-sm font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(13,23,72,0.22)] max-sm:px-3 max-sm:py-2 max-sm:text-xs"
           >
             Обсудить проект
           </a>
@@ -193,7 +193,7 @@ export default function Page() {
   <div className="absolute right-0 top-0 hidden h-full w-[36%] bg-[#0D1748] lg:block" />
   <div className="absolute right-[8%] top-[12%] hidden h-[62%] w-[26%] rounded-[40px] bg-[#AD6B4F]/10 blur-3xl lg:block" />
 
-  <div className="relative mx-auto max-w-[1400px] grid gap-10 px-6 py-12 lg:grid-cols-[0.98fr_1.02fr] lg:px-10 lg:py-16">
+  <div className="relative mx-auto max-w-[1400px] grid gap-10 px-6 py-12 max-sm:gap-8 max-sm:px-4 max-sm:py-10 lg:grid-cols-[0.98fr_1.02fr] lg:px-10 lg:py-16">
     <motion.div
       className="relative z-10 max-w-2xl self-center pt-4 lg:pt-0"
       initial="hidden"
@@ -211,7 +211,7 @@ export default function Page() {
 
       <motion.h1
         variants={fadeUp}
-        className="max-w-4xl font-sans text-[34px] font-semibold leading-[0.92] tracking-[-0.05em] text-slate-950 xl:text-[72px]"
+        className="max-w-4xl font-sans text-[56px] xl:text-[72px] font-semibold leading-[0.92] tracking-[-0.05em] text-slate-950 max-sm:text-[34px] sm:text-[44px] lg:text-[56px] max-sm:leading-[0.95]"
       >
         Системы
         <span className="block text-[#0D1748]">водоподготовки</span>
@@ -220,7 +220,7 @@ export default function Page() {
 
       <motion.p
         variants={fadeUp}
-        className="mt-7 max-w-xl text-[19px] leading-8 text-slate-600"
+        className="mt-7 max-w-xl text-[19px] leading-8 text-slate-600 max-sm:text-base max-sm:leading-7"
       >
         Мы проектируем, внедряем и сопровождаем системы водоподготовки для промышленных предприятий — от анализа задачи до устойчивого технологического результата.
       </motion.p>
@@ -231,13 +231,13 @@ export default function Page() {
       >
         <a
           href="#contact"
-          className="inline-flex items-center justify-center rounded-full bg-[#0D1748] px-7 py-4 text-sm font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_40px_rgba(13,23,72,0.22)]"
+          className="inline-flex items-center justify-center rounded-full bg-[#0D1748] px-7 py-4 text-sm font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_40px_rgba(13,23,72,0.22)] max-sm:w-full sm:w-auto"
         >
           Обсудить задачу
         </a>
         <a
           href="#solutions"
-          className="inline-flex items-center justify-center rounded-full border border-[#AD6B4F]/30 bg-white px-7 py-4 text-sm font-medium text-slate-800 transition duration-300 hover:-translate-y-0.5 hover:border-[#0D1748] hover:text-[#0D1748] hover:shadow-[0_12px_26px_rgba(15,23,42,0.08)]"
+          className="inline-flex items-center justify-center rounded-full border border-[#AD6B4F]/30 bg-white px-7 py-4 text-sm font-medium text-slate-800 transition duration-300 hover:-translate-y-0.5 hover:border-[#0D1748] hover:text-[#0D1748] hover:shadow-[0_12px_26px_rgba(15,23,42,0.08)] max-sm:w-full sm:w-auto"
         >
           Посмотреть подход
         </a>
@@ -261,14 +261,14 @@ export default function Page() {
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
     >
-      <div className="relative w-full max-w-[660px] rounded-[38px] bg-[#0D1748] p-5 shadow-[0_34px_90px_rgba(13,23,72,0.28)]">
+      <div className="relative w-full max-w-[660px] rounded-[38px] bg-[#0D1748] p-5 shadow-[0_34px_90px_rgba(13,23,72,0.28)] max-sm:p-3">
         <div className="absolute inset-0 rounded-[38px] border border-white/10" />
         <div className="absolute inset-0 rounded-[38px] opacity-[0.08] brand-stripes" />
         <div className="absolute inset-0 rounded-[38px] bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(173,107,79,0.18),transparent_22%)]" />
         <div className="absolute -right-3 top-6 h-[72%] w-[10px] rounded-full bg-[#AD6B4F]" />
 
         <div className="relative z-10 rounded-[30px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02))] p-5">
-          <div className="relative overflow-hidden rounded-[24px] border border-white/10 min-h-[430px] bg-[linear-gradient(180deg,rgba(13,23,72,0.18),rgba(13,23,72,0.42))]">
+          <div className="relative overflow-hidden rounded-[24px] border border-white/10 min-h-[430px] bg-[linear-gradient(180deg,rgba(13,23,72,0.18),rgba(13,23,72,0.42))] max-sm:min-h-[300px]">
             <div className="absolute inset-0 opacity-[0.05] brand-stripes" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.05),transparent_22%),radial-gradient(circle_at_bottom_right,rgba(173,107,79,0.12),transparent_24%)]" />
 
@@ -285,7 +285,7 @@ export default function Page() {
                   y: { duration: 7, repeat: Infinity, ease: "easeInOut" },
                   scale: { duration: 7, repeat: Infinity, ease: "easeInOut" },
                 }}
-                className="relative h-[250px] w-[250px]"
+                className="relative h-[250px] w-[250px] max-sm:h-[180px] max-sm:w-[180px]"
               >
                 <div className="absolute inset-0 rounded-full bg-[#AD6B4F]/[0.06] blur-3xl" />
                 <Image
@@ -594,3 +594,5 @@ export default function Page() {
 </div>
   );
 }
+
+
