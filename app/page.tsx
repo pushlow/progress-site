@@ -318,38 +318,38 @@ export default function Page() {
   <div className="absolute inset-0 opacity-[0.09] brand-stripes" />
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.04),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(173,107,79,0.08),transparent_22%)]" />
 
-  <div className="brand-container relative mx-auto grid gap-14 px-6 py-24 lg:grid-cols-[0.88fr_1.12fr] lg:px-10">
+  <div className="brand-container relative mx-auto grid gap-10 px-4 py-16 sm:gap-14 sm:px-6 sm:py-24 lg:grid-cols-[0.88fr_1.12fr] lg:px-10">
     {/* ЛЕВАЯ ЧАСТЬ */}
     <motion.div variants={fadeUp} className="max-w-xl">
       <div className="text-sm uppercase tracking-[0.24em] text-[#AD6B4F]">
         О компании
       </div>
 
-      <h2 className="mt-6 text-4xl font-semibold leading-[1.02] tracking-[-0.045em] text-white md:text-5xl xl:text-[58px]">
+      <h2 className="mt-5 text-3xl font-semibold leading-[1.04] tracking-[-0.045em] text-white sm:mt-6 sm:text-4xl md:text-5xl xl:text-[58px]">
         Инженерный партнёр
         <span className="block text-white/82">для промышленных предприятий</span>
       </h2>
 
-      <p className="mt-7 text-[18px] leading-8 text-white/72">
+      <p className="mt-5 text-base leading-7 text-white/72 sm:mt-7 sm:text-[18px] sm:leading-8">
         Мы берём на себя полный цикл работ по водоподготовке: от анализа задачи и подбора технологии до внедрения, сопровождения и развития решения в эксплуатации.
       </p>
     </motion.div>
 
     {/* ПРАВЫЙ МОДУЛЬ */}
     <motion.div variants={fadeUp} className="relative">
-      <div className="relative overflow-hidden rounded-[36px] border border-white/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02))] p-10 shadow-[0_28px_90px_rgba(0,0,0,0.22)]">
+      <div className="relative overflow-hidden rounded-[28px] border border-white/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02))] p-6 shadow-[0_28px_90px_rgba(0,0,0,0.22)] sm:rounded-[36px] sm:p-10">
         {/* Материал / глубина */}
-        <div className="absolute inset-0 rounded-[36px] bg-[linear-gradient(135deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0.015)_26%,rgba(255,255,255,0.00)_54%,rgba(173,107,79,0.04)_100%)]" />
-        <div className="absolute inset-0 rounded-[36px] opacity-[0.07] brand-stripes" />
-        <div className="absolute inset-[1px] rounded-[35px] border border-white/6" />
-        <div className="absolute inset-0 rounded-[36px] shadow-[inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-28px_42px_rgba(0,0,0,0.12)]" />
-        <div className="absolute inset-[18px] rounded-[26px] border border-white/6" />
+        <div className="absolute inset-0 rounded-[28px] bg-[linear-gradient(135deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0.015)_26%,rgba(255,255,255,0.00)_54%,rgba(173,107,79,0.04)_100%)] sm:rounded-[36px]" />
+        <div className="absolute inset-0 rounded-[28px] opacity-[0.07] brand-stripes sm:rounded-[36px]" />
+        <div className="absolute inset-[1px] rounded-[27px] border border-white/6 sm:rounded-[35px]" />
+        <div className="absolute inset-0 rounded-[28px] shadow-[inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-28px_42px_rgba(0,0,0,0.12)] sm:rounded-[36px]" />
+        <div className="absolute inset-[12px] rounded-[20px] border border-white/6 sm:inset-[18px] sm:rounded-[26px]" />
 
-        <div className="relative z-10 flex flex-col gap-14">
+        <div className="relative z-10 flex flex-col gap-10 sm:gap-14">
           {/* ТЕЗИС 01 */}
-          <div className="grid gap-5 md:grid-cols-[104px_1fr]">
+          <div className="grid gap-4 sm:gap-5 md:grid-cols-[104px_1fr]">
             <div className="pt-0.5">
-              <div className="text-[44px] font-light leading-none tracking-[0.14em] text-[#AD6B4F] opacity-95">
+              <div className="text-[32px] font-light leading-none tracking-[0.14em] text-[#AD6B4F] opacity-95 sm:text-[44px]">
                 01
               </div>
             </div>
@@ -359,11 +359,11 @@ export default function Page() {
                 Системный подход
               </div>
 
-              <div className="mt-4 max-w-2xl text-[38px] font-medium leading-[1.06] tracking-[-0.04em] text-white">
+              <div className="mt-3 max-w-2xl text-[28px] font-medium leading-[1.08] tracking-[-0.04em] text-white sm:mt-4 sm:text-[38px] sm:leading-[1.06]">
                 Водоподготовка как часть производственной системы
               </div>
 
-              <p className="mt-5 max-w-2xl text-[17px] leading-8 text-white/68">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/68 sm:mt-5 sm:text-[17px] sm:leading-8">
                 Учитываем технологию, режим работы, экономику, обслуживание и перспективу масштабирования при принятии инженерных решений.
               </p>
             </div>
@@ -376,9 +376,9 @@ export default function Page() {
           </div>
 
           {/* ТЕЗИС 02 */}
-          <div className="grid gap-5 md:grid-cols-[104px_1fr]">
+          <div className="grid gap-4 sm:gap-5 md:grid-cols-[104px_1fr]">
             <div className="pt-0.5">
-              <div className="text-[44px] font-light leading-none tracking-[0.14em] text-[#AD6B4F] opacity-72">
+              <div className="text-[32px] font-light leading-none tracking-[0.14em] text-[#AD6B4F] opacity-72 sm:text-[44px]">
                 02
               </div>
             </div>
@@ -388,11 +388,11 @@ export default function Page() {
                 Управляемый результат
               </div>
 
-              <div className="mt-4 max-w-2xl text-[32px] font-medium leading-[1.08] tracking-[-0.035em] text-white/92">
+              <div className="mt-3 max-w-2xl text-[24px] font-medium leading-[1.12] tracking-[-0.035em] text-white/92 sm:mt-4 sm:text-[32px] sm:leading-[1.08]">
                 Устойчивость и предсказуемость в эксплуатации
               </div>
 
-              <p className="mt-5 max-w-2xl text-[17px] leading-8 text-white/68">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/68 sm:mt-5 sm:text-[17px] sm:leading-8">
                 Решение должно не только внедряться, но и стабильно работать в реальных условиях предприятия и быть управляемым в процессе эксплуатации.
               </p>
             </div>
